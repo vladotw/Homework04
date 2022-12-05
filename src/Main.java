@@ -12,7 +12,7 @@ public class Main {
             if (age >= 18) {
                 System.out.println("Вам 18 или более лет");
             }
-            else {
+            if (age < 18) {
                 System.out.println("Вам меньше 18 лет");
             }
 
