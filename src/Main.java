@@ -3,6 +3,8 @@ public class Main {
         task1();
         task2();
         task3();
+        task4();
+
 
     }
     public static void task1() {
@@ -14,7 +16,7 @@ public class Main {
         if (age >= 18) {
             System.out.println("Вам 18 или более лет");
         }
-        if (age < 18) {
+        else  {
             System.out.println("Вам меньше 18 лет");
         }
 
@@ -23,7 +25,7 @@ public class Main {
     }
 
 
-    public static void task2 () {
+    public static void task2() {
         System.out.println("Задача 2");
         System.out.println();
 
@@ -34,7 +36,7 @@ public class Main {
                     "шапку");
         }
 
-        if (outdoorTemperature > 5) {
+        else {
             System.out.println("На улице " + outdoorTemperature + " градусов, можно идти " +
                     "без шапки");
         }
@@ -43,7 +45,7 @@ public class Main {
         System.out.println();
     }
 
-    public static void task3 () {
+    public static void task3() {
         System.out.println("Задача 3");
         System.out.println();
 
@@ -52,7 +54,7 @@ public class Main {
         if (speed > 60) {
             System.out.println("Если скорость " + speed + " км/ч, то придётся заплатить штраф");
         }
-        if (speed <= 60) {
+        else {
             System.out.println("Если скорость " + speed + " км/ч, то можно ездить спокойно");
         }
 
@@ -60,6 +62,35 @@ public class Main {
         System.out.println();
     }
 
+    public static void task4() {
+        System.out.println("Задача 4");
+        System.out.println();
+
+        int age = 27;
+        boolean needToGoToNursery = age > 2 && age <=6;
+        boolean needToGoToSchool = age >= 7 && age <= 18;
+        boolean needToGoToUniversity  = age > 18 && age < 24;
+        boolean needToGoToWork = age >= 24;
+
+        if(needToGoToNursery) {
+            System.out.println("Если возраст человека равен " + age + ", то ему " +
+                    "нужно ходить в детский сад");
+        }
+        else if(needToGoToSchool) {
+            System.out.println("Если возраст человека равен " + age + ", то " +
+                    "ему нужно ходить в школу");
+        }
+        else if(needToGoToUniversity) {
+            System.out.println("Если возраст человека равен " + age +
+                    ", то его место в университете");
+        }
+        else if(needToGoToWork) {
+            System.out.println("Если возраст человека равен " + age +
+                                ", то ему пора ходить на работу");
+        }
+        System.out.println();
+        System.out.println();
+    }
 
 
 }
